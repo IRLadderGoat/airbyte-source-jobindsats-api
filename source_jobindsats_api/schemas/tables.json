@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "Tables":{
+      "type": "array",
+      "items": {
+        "type":"object",
+        "properties": {
+          "TableID": {
+            "type":"string"
+          },
+          "TableName": {
+            "type": "string"
+          },
+          "SubjectID": {
+            "type": "string"
+          },
+          "UpdateFrequency": {
+            "type": "string"
+          },
+          "LatestUpdate": {
+            "type": "string"
+          },
+          "NextUpdate": {
+            "type": "string"
+          },
+          "Measurements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "ID":{
+                  "type":"string"
+                },
+                "Name":{
+                  "type":"string"
+                }
+              }
+            }
+          },
+          "PeriodCategory": {
+            "type": "array",
+            "items": {
+              "type":"object",
+              "properties":{
+                "type":"string"
+              }
+            }
+          },
+          "AreaHierarchy": {
+            "type": "array",
+            "items": {
+              "type":"object",
+              "properties":{
+                "type":"string"
+              }
+            }
+          },
+          "FirstPeriod": {
+            "type": "string"
+          },
+          "LatestPeriod": {
+            "type": "string"
+          },
+          "Dimensions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "DimensionID":{
+                  "type":"string"
+                },
+                "DimensionName":{
+                  "type":"string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
