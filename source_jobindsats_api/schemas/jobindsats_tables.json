@@ -1,78 +1,78 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
+  "type":["null",  "object"],
   "properties": {
-    "Tables":{
-      "type": "array",
+    "tables":{
+      "type":["null",  "array"],
       "items": {
-        "type":"object",
+        "type":["null", "object"],
         "properties": {
           "TableID": {
-            "type":"string"
+            "type":["null", "string"]
           },
           "TableName": {
-            "type": "string"
+            "type":["null",  "string"]
           },
           "SubjectID": {
-            "type": "string"
+            "type":["null",  "string"]
           },
           "UpdateFrequency": {
-            "type": "string"
+            "type":["null",  "string"]
           },
           "LatestUpdate": {
-            "type": "string"
+            "type":["null",  "string"]
           },
           "NextUpdate": {
-            "type": "string"
+            "type":["null",  "string"]
           },
           "Measurements": {
-            "type": "array",
+            "type":["null",  "array"],
             "items": {
-              "type": "object",
+              "type":["null",  "object"],
               "properties": {
                 "ID":{
-                  "type":"string"
+                  "type":["null", "string"]
                 },
                 "Name":{
-                  "type":"string"
+                  "type":["null", "string"]
                 }
               }
             }
           },
           "PeriodCategory": {
-            "type": "array",
+            "type":["null",  "array"],
             "items": {
-              "type":"object",
+              "type":["null", "object"],
               "properties":{
-                "type":"string"
+                "type":["null", "string"]
               }
             }
           },
           "AreaHierarchy": {
-            "type": "array",
+            "type":["null",  "array"],
             "items": {
-              "type":"object",
+              "type":["null", "object"],
               "properties":{
-                "type":"string"
+                "type":["null", "string"]
               }
             }
           },
           "FirstPeriod": {
-            "type": "string"
+            "type":["null",  "string"]
           },
           "LatestPeriod": {
-            "type": "string"
+            "type":["null",  "string"]
           },
           "Dimensions": {
-            "type": "array",
+            "type":["null",  "array"],
             "items": {
-              "type": "object",
+              "type":["null",  "object"],
               "properties": {
                 "DimensionID":{
-                  "type":"string"
+                  "type":["null", "string"]
                 },
                 "DimensionName":{
-                  "type":"string"
+                  "type":["null", "string"]
                 }
               }
             }

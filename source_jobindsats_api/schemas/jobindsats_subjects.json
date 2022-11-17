@@ -1,17 +1,17 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
+  "type":["null", "object"],
   "properties": {
-    "Subjects":{
-      "type": "array",
+    "subjects":{
+      "type":["null", "array"],
       "items": {
-        "type":"object",
+        "type":["null","object"],
         "properties": {
           "SubjectID": {
-            "type":"string"
+            "type":["null","string"]
           },
           "SubjectName": {
-            "type": "string"
+            "type":["null", "string"]
           }
         }
       }

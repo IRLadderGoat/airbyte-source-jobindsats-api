@@ -11,3 +11,7 @@ connectionSpecification:
       description: The authentication key for the API
       pattern: ^[0-9a-zA-Z]+
       #examples: [0f77f4a6c00d98d37c04a6a0b5d4eb7221d36e6b83fc34a1]
+    format:
+      type: string
+      description: The format for the response
+      pattern: ^[a-zA-Z]+

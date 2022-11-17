@@ -38,13 +38,13 @@ class JobindsatsApiStream(HttpStream, ABC):
             yield resp
 
 
-class Subjects(JobindsatsApiStream):
+class JobindsatsSubjects(JobindsatsApiStream):
     primary_key = "subjectid"
 
     def path(self, **kwargs) -> str:
         return "subjects"
 
-class Tables(JobindsatsApiStream):
+class JobindsatsTables(JobindsatsApiStream):
     primary_key = "tableid"
 
     def path(self, **kwargs) -> str:
@@ -69,4 +69,4 @@ class SourceJobindsatsApi(AbstractSource):
 
 
     def streams(self, config: Mapping[str, Any]) -> List[Stream]:
-        return [Subjects(config["api_key"]), Tables(config["api_key"])]
+        return [JobindsatsSubjects(config["api_key"]), JobindsatsTables(config["api_key"])]
